@@ -19,7 +19,10 @@ Simple, fast, and fun UI
 
 
 🚀 Tech Stack
+
 HTML – Structure
+
 CSS – Styling & Animations
+
 JavaScript – Logic & Interactivity
 
