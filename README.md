@@ -2,7 +2,7 @@
 
 A beautiful and animated calculator built with HTML, CSS, and JavaScript.
 
-🔗 Live Demo: Click here
+🔗 Live Demo: Click here - https://shriparna14.github.io/web-calculator/
 
 
 ✨ Features
