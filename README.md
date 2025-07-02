@@ -6,10 +6,15 @@ A beautiful and animated calculator built with HTML, CSS, and JavaScript.
 
 
 ✨ Features
+
 Basic operations: +, −, ×, ÷, %
+
 Responsive for mobile & desktop
+
 Clear (C) & Backspace (⌫)
+
 Floating colorful particles & math symbols
+
 Simple, fast, and fun UI
 
 
