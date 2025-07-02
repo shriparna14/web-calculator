@@ -1,0 +1,112 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #130e20;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #3660fb;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.calculator {
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.5);
+  z-index: 1;
+}
+
+.display {
+  background: #000;
+  color: #0f0;
+  font-size: 2.5rem;
+  padding: 15px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #333, #222);
+  color: white;
+  box-shadow: 0 0 10px #4a90e2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  box-shadow: 0 0 15px #4a90e2, 0 0 30px #4a90e2;
+}
+
+button:active {
+  transform: scale(0.95);
+  background-color: #555;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+/* Background Operators */
+.background-operators {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.background-operators span {
+  position: absolute;
+  font-size: 4rem;
+  color: #aaa;
+  opacity: 0.05;
+  animation: float 18s linear infinite;
+}
+
+.background-operators span:nth-child(1) { top: 10%; left: 20%; }
+.background-operators span:nth-child(2) { top: 30%; left: 80%; }
+.background-operators span:nth-child(3) { top: 50%; left: 40%; }
+.background-operators span:nth-child(4) { top: 70%; left: 10%; }
+.background-operators span:nth-child(5) { top: 20%; left: 60%; }
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0); }
+  100% { transform: translateY(-100px) rotate(360deg); }
+}
+
